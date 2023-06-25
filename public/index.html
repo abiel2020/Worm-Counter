@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Assignment 0</title>
+    <meta name="description" content="First web assignment">
+    <meta name="author" content="student name">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="updateVariables()">
+    <div class="header">
+        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 36px; text-align: center;">
+            SWEN-344 Web Assignment 1</h1>
+        <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">Section 02
+        </h2>
+        <h2 id="experiment">Blister Mutation</h2>
+        <h3 id="Petri-Dish"> Petri Dish 1</h3>
+        <select onchange="changeMenu()" id="selector">
+            <option value="1"></option>
+            <option value="Maturity">Maturity</option>
+            <option value="Sex">Sex</option>
+            <option value="Coordination">Coordination</option>
+            <option value="Mutant">Mutant</option>
+
+        </select>
+        <button id="reset-button" onclick="reset()">Reset Count</button>
+        <button id="done-button" onclick="done()">Done</button>
+        <h3 id="results"></h3>
+    </div>
+    <div class="flex-grid">
+        <h1 class="counter-1" id="counter-1">0</h1>
+        <h1 class="counter-2" id="counter-2">0</h1>
+    </div>
+    <div class="flex-grid">
+        <button onclick="firstCounter()" id="button1">click me</button>
+        <button onclick="secondCounter()" id="button2">click me</button>
+    </div>
+
+</body>
+
+</html>
